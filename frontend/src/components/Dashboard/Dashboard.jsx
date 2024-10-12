@@ -76,6 +76,7 @@ const Dashboard = () => {
   // Handle routing to chapters
   const handleStartReading = () => {
     navigate("/chapters");
+    window.location.reload();
   };
 
   return (
