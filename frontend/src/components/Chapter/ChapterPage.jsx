@@ -80,7 +80,7 @@ const ChapterPage = () => {
 
   const handleNext = () => {
     const nextChapter = Number(chapter) + 1;
-    if (nextChapter <= 1) navigate(`/chapters/${nextChapter}`);
+    if (nextChapter <= 51) navigate(`/chapters/${nextChapter}`);
   };
 
   const handleMarkAsRead = async () => {
@@ -176,9 +176,9 @@ const ChapterPage = () => {
 
           <button
             onClick={handleNext}
-            disabled={Number(chapter) === 10}
+            disabled={Number(chapter) === 51}
             className={`${
-              Number(chapter) === 10 ? "bg-gray-600" : "bg-blue-600"
+              Number(chapter) === 51 ? "bg-gray-600" : "bg-blue-600"
             } text-white font-semibold p-2 rounded hover:bg-blue-500 transition`}
           >
             Next Chapter
